@@ -1,0 +1,32 @@
+.parceiros {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titulo-parceiros h1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--cor-11);
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.nossos-parceiros {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  box-sizing: border-box;
+}
+
+.nossos-parceiros li {
+  display: flex;
+  padding: 32px;
+  border-left: 2px solid var(--cor-2);
+}
+
+.nossos-parceiros img {
+  margin: auto;
+}
