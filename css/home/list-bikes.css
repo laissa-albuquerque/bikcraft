@@ -17,7 +17,7 @@
   margin: 0 auto;
   padding: 10px;
   overflow-x: auto;
-  margin-bottom: 120px;
+  margin-bottom: 110px;
 }
 
 .bicicletas-lista li {
@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 1200px) {
+  .bicicletas-lista {
+    margin-bottom: 80px;
+  }
+
   .bicicletas-titulo h1 {
     font-size: 2.8rem;
   }

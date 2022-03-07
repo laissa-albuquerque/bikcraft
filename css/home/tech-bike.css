@@ -1,0 +1,154 @@
+.sobre-tech {
+  background: var(--cor-11);
+  color: var(--cor-5);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-0);
+}
+
+.sobre-tech-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.sobre-tech-container h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.2;
+  font-size: 1.58rem;
+}
+
+.sobre-tech-container h1 {
+  font-family: Poppins, "sans-serif";
+  color: var(--cor-0);
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 32px;
+}
+
+.sobre-tech-container p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.sobre-tech-container a {
+  font-family: Poppins, "sans-serif";
+  font-weight: 500;
+  color: var(--cor-p1);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  padding-bottom: 4px;
+  border-bottom: 4px solid var(--cor-p1);
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.sobre-tech-container a:hover {
+  color: var(--cor-0);
+  border-bottom: 4px solid var(--cor-0);
+}
+
+.tipo-tech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+.tipo-tech img {
+  width: 25px;
+  margin-bottom: 8px;
+}
+
+.tipo-tech h3 {
+  font-family: Poppins, "sans-serif";
+  color: var(--cor-0);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.tipo-tech p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.bg-tech img {
+  width: 100%;
+  object-position: left;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .sobre-tech {
+    box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+  }
+
+  .sobre-tech-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .sobre-tech-container h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .sobre-tech-container p {
+    font-size: 1.21rem;
+    line-height: 1.2;
+  }
+
+  .sobre-tech-container a {
+    font-size: 1.35rem;
+  }
+
+  .tipo-tech p {
+    font-size: 1.1rem;
+  }
+
+  .bg-tech img {
+    height: 900px;
+  }
+}
+
+@media (max-width: 800px) {
+  .sobre-tech {
+    box-shadow: none;
+  }
+
+  .sobre-tech-info {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-tech-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .sobre-tech-container h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .sobre-tech-container p {
+    font-size: 1.21rem;
+    line-height: 1.2;
+  }
+
+  .sobre-tech-container a {
+    font-size: 1.35rem;
+  }
+
+  .tipo-tech p {
+    font-size: 1.1rem;
+  }
+
+  .bg-tech img {
+    display: none;
+  }
+}

@@ -52,6 +52,11 @@ img[src$=".jpg"] {
   display: block;
 }
 
+img[src$=".svg"] {
+  max-width: 100%;
+  display: block;
+}
+
 .detalhe-ponto {
   color: var(--cor-p1);
 }
