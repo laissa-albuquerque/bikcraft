@@ -3,6 +3,7 @@
   color: var(--cor-5);
   box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-0);
   margin-bottom: 110px;
+  padding: 20px;
 }
 
 .sobre-tech-info {
@@ -11,7 +12,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 20px;
   box-sizing: border-box;
   align-items: center;
 }
@@ -119,6 +119,7 @@
 @media (max-width: 800px) {
   .sobre-tech {
     box-shadow: none;
+    margin-bottom: 40px;
   }
 
   .sobre-tech-info {
@@ -150,5 +151,11 @@
 
   .bg-tech img {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tipo-tech {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,12 +1,16 @@
+.bicicletas {
+  padding: 20px;
+}
+
 .bicicletas-titulo h1 {
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 20px;
   color: var(--cor-11);
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  margin-bottom: 28px;
 }
 
 .bicicletas-lista {
@@ -79,6 +83,7 @@
 @media (max-width: 800px) {
   .bicicletas-lista {
     gap: 20px;
+    margin-bottom: 40px;
   }
 
   .bicicletas-lista img {
