@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
+
+.depoimento {
+  background-color: var(--cor-p1);
+  margin-bottom: 120px;
+}
+
+.depoimento-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 80px;
+  background: url(../../img/dec/bottom-right-p.svg) no-repeat bottom 40px right
+    40px;
+}
+
+.depoimento-img img {
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.depoimento-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+.depoimento-texto p {
+  font-family: "Merriweather";
+  font-size: 2.1rem;
+  color: var(--cor-p5);
+  padding-right: 40px;
+}
+
+.depoimento-texto > span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.12rem;
+  color: var(--cor-p5);
+  text-align: end;
+  padding-bottom: 80px;
+  padding-right: 50px;
+}
+
+.depoimento-texto p::before {
+  content: "“";
+  font-size: 5rem;
+  line-height: 0.8;
+  color: var(--cor-p2);
+  margin-left: -45px;
+  margin-right: 4px;
+  top: 25px;
+  position: relative;
+}
+
+.depoimento-texto p::after {
+  content: "”";
+  font-size: 5rem;
+  line-height: 0;
+  top: 50px;
+  color: var(--cor-p2);
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .depoimento-container {
+    background: none;
+    gap: 60px;
+  }
+
+  .depoimento-texto p {
+    font-size: 2.5;
+  }
+
+  .depoimento-texto > span {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 850px) {
+  .depoimento {
+    margin-bottom: 40px;
+  }
+
+  .depoimento-container {
+    gap: 40px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .depoimento-texto {
+    padding-right: 0px;
+  }
+
+  .depoimento-texto p {
+    font-size: 1.5rem;
+  }
+
+  .depoimento-texto p::before {
+    margin-left: 0px;
+    font-size: 2.5rem;
+    top: 10px;
+  }
+
+  .depoimento-texto p::after {
+    font-size: 2.5rem;
+    top: 25px;
+  }
+
+  .depoimento-texto > span {
+    padding-bottom: 40px;
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .depoimento-img img {
+    height: 200px;
+    width: 100%;
+  }
+}
